@@ -1,6 +1,4 @@
-import { books, recommendedBooks, combineReducers } from '../src/reducers'
-
-
+import { books, recommendedBooks, combineReducers } from '../src/reducers/reducers'
 
 const addBook = "ADD_BOOK"
 const removeBook = "REMOVE_BOOK"
