@@ -1,6 +1,7 @@
-import { books, recommendedBooks, combineReducers } from '../src/reducers'
+// import { books, recommendedBooks, combineReducers } from '../src/reducers'
 
-
+import { books, recommendedBooks } from '../src/reducers';
+import {combineReducers} from 'redux';
 
 const addBook = "ADD_BOOK"
 const removeBook = "REMOVE_BOOK"
