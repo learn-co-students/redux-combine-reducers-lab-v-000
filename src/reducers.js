@@ -11,14 +11,14 @@ export function books(state = [], action){
   }
    
    
-  export function recommendedBooks(state = [], action){
+export function recommendedBooks(state = [], action){
     switch (action.type) {
     case "ADD_RECOMMENDED_BOOK":
-      return [].concat(state, action.payload)
+        return [].concat(state, action.payload)
     case "REMOVE_RECOMMENDED_BOOK":
-      let idx = state.indexOf(action.payload)
-      return [].concat(state.slice(0, idx), state.slice(idx + 1, state.length))
+        let idx = state.indexOf(action.payload)
+        return [].concat(state.slice(0, idx), state.slice(idx + 1, state.length))
     default:
-      return state
+        return state
     }
-  }
+}
