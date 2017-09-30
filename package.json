@@ -1,5 +1,4 @@
 {
-
   "name": "redux-combine-reducers-lab",
   "version": "0.1.0",
   "description": "Learn about combine reducers",
@@ -29,7 +28,6 @@
   "bugs": {
     "url": "https://github.com/learn-co-curriculum/redux-combine-reducers-lab/issues"
   },
-
   "homepage": "https://github.com/learn-co-curriculum/redux-combine-reducers-lab#readme",
   "devDependencies": {
     "babel": "^6.5.2",
@@ -42,7 +40,7 @@
     "fs": "0.0.1-security",
     "jsdom": "^9.4.1",
     "mocha": "^3.0.1",
-    "mocha-multi": "^0.9.1",
+    "mocha-multi": "^0.11.0",
     "node-inspector": "^0.12.8",
     "react-addons-test-utils": "^15.3.2",
     "webpack": "^1.13.2",
