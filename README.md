@@ -10,7 +10,7 @@
 
 So far, we've seen how we can use Redux to create a store, an object that holds our application state. We've created our store using the createStore method, passing in our reducer function as an argument. This lets us 'register' that reducer function with our store so that each action that our store dispatches is passed to our reducer. Our reducer accepts an action as its argument and returns a new state object, depending on how our action has indicated that state should change.
 
-This sounds all well and good...but we might have a slight problem, in that every change that we want to make to our application state has to be defined in a single reducer function. This might work our great for a small application with just a few different state changes, but you can imagine it would quickly become unwieldy in a large application.
+This sounds all well and good...but we might have a slight problem, in that every change that we want to make to our application state has to be defined in a single reducer function. This might work out great for a small application with just a few different state changes, but you can imagine it would quickly become unwieldy in a large application.
 
 Enter combineReducers to save the day! In this lab, we'll see how Redux's combine reducers function lets us delegate different pieces of state to separate reducer functions.
 
@@ -206,3 +206,5 @@ const rootReducer = combineReducers({books, recommendedBooks})
 ### Resources
 
 + [Implementing Combine Reducers from Scratch](https://egghead.io/lessons/javascript-redux-implementing-combinereducers-from-scratch)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/redux-combine-reducers-lab'>Redux Combine Reducers Lab</a> on Learn.co and start learning to code for free.</p>
