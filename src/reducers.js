@@ -10,7 +10,7 @@ export function books(state = [], action){
   }
 }
 
-export function recomendedBooks(state = [], action){
+export function recommendedBooks(state = [], action){
   switch (action.type) {
     case 'ADD_RECOMMENDED_BOOK':
       return [].concat(state, action.payload)
