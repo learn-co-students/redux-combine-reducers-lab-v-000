@@ -1,4 +1,6 @@
-import { books, recommendedBooks, combineReducers } from '../src/reducers'
+import { books } from '../src/reducers';
+import { recommendedBooks } from '../src/reducers';
+import {combineReducers} from 'redux';
 
 
 
