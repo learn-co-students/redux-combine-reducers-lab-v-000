@@ -52,7 +52,7 @@ describe('combine reducers', function(){
     let action = { type: addBook, payload: projs }
     expect(rootReducer(state, action).recommendedBooks).toBeAn(Array)
     expect(rootReducer(state, action).recommendedBooks.length).toBe(0)
-    //expect(rootReducer(state, action).books[2]).toBe(projs)
+    expect(rootReducer(state, action).books[2]).toBe(projs)
     expect(rootReducer(state, action).books[0]).toBe(state.books[0])
   })
 })
