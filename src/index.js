@@ -1,1 +1,24 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { combineReducers } from 'redux'
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
+// we wrap store in a function for testing purposes
+export const configureStore = () => {
+  return createStore(manageBooks, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+}
+
+const store = configureStore();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App store={store}/>
+  </Provider>,
+  document.getElementById('root')
+);
+
+
+
+const rootReducer = combineReducers({books, recommendedBooks})
