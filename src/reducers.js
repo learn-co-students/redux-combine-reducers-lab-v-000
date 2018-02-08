@@ -1,13 +1,6 @@
-export function combineReducers(reducers){
-  return (state = {}, action) => {
-    return Object.keys(reducers).reduce(
-      (nextState, key)=>{
-        nextState[key] = reducers[key](state[key], action);
-        return nextState
-      }, {}
-    )
-  }
-}
+import { combineReducers } from 'redux'
+
+const rootReducer = combineReducers({books, recommendedBooks})
 
 
 export function books(state = [], action){
