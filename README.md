@@ -199,7 +199,6 @@ To use Redux's `combineReducers` function, just import it where you want to use 
 ```javascript
 import { combineReducers } from 'redux'
 
-const rootReducer = combineReducers({books, recommendedBooks})
 
 ```
 
