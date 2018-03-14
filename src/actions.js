@@ -20,7 +20,6 @@ export function removeBook(book){
 }
 
 export function removeRecommendedBook(book){
-
   return {
     type: "REMOVE_RECOMMENDED_BOOK",
     payload: book
