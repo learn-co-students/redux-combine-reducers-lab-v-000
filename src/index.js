@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import { books, recommendedBooks } from './reducers/manageBooks';
+import { books, recommendedBooks } from './reducers';
 
 // we wrap store in a function for testing purposes
 export const configureStore = () => {

@@ -21,7 +21,7 @@ export class BookInput extends Component {
 
   handleOnSubmit(event) {
     event.preventDefault();
-    this.props.addRestaurant(this.state);
+    this.props.addBook(this.state);
   }
 
   render() {
